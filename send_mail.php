@@ -13,12 +13,12 @@ require_once 'config.php';
       $mail->isSMTP();
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
-      $mail->Username = 'helloworld.news.india@gmail.com';
-      $mail->Password = '@33025HELLOWORLD';
+      $mail->Username = 'Place your own email';
+      $mail->Password = 'Place Your email password';
       $mail->SMTPSecure = 'tls';
       $mail->Port = 587;
 
-      $mail->setFrom('helloworld.news.india@gmail.com', 'HelloWorld India');
+      $mail->setFrom('Place your own email', 'HelloWorld India');
       $mail->addAddress($email);
 
       $mail->isHTML(true);
